@@ -1,3 +1,5 @@
+/*Desarrollado por Juan Pablo Gómez*/ 
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -103,4 +105,29 @@ body {
   padding: 2px 6px;
   border-radius: 5px;
   font-size: 12px;
+}
+
+/* Boton de vista */
+.custom-hotspot-button {
+  background-color: white !important; /* Fondo blanco */
+  border-radius: 50%; /* Círculo */
+  width: 0.1px;
+  height: 0.1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacarlo */
+  border: 2px solid #00000020; /* Borde sutil */
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.custom-hotspot-button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Ícono de cámara */
+.custom-hotspot-button::before {
+  content: "📷";
+  font-size: 30px;
 }
